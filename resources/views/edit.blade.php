@@ -14,7 +14,7 @@
         @method('PUT')
 
         <div class="mb-3">
-            <input type="text" name="title" value="{{ $task->title }}" class="form-control">
+            <input type="text" name="title" value="{{ old('title') }}" class="form-control" placeholder="edit --">
         </div>
 
         <button type="submit" class="btn btn-success">Update</button>
